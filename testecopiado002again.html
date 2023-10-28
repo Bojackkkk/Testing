@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>again</title>
+    <style>
+        body {
+            background-color: rgb(141, 220, 194);
+            font: bold 33pt Arial;
+            color: rgba(0, 0, 0, 0.687);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        alert('Site de paqueras 24H KKKKKKKKKKKKk');
+        var name = prompt('Qual o seu nome?');
+        var ask0 = Number(prompt('Qual a sua idade?'));
+        var ask1 = prompt('Você possui 18 anos ou mais? Responda com "yes" ou "no"');
+        var resultado;
+
+        if (ask0 >= 18 && ask1 === 'yes') {
+            alert('Ok, você diz a verdade');
+            resultado = true;
+        } else if (ask0 < 18 && ask1 === 'yes') {
+            alert('Hmm, aparentemente você está mentindo ou não respondeu corretamente...');
+            resultado = false;
+        } else if (ask0 < 18 && ask1 === 'no') {
+            alert('Ok, você diz a verdade');
+            resultado = true;
+        } else {
+            alert('Hmm, aparentemente você está mentindo ou não respondeu corretamente...');
+            resultado = false;
+        }
+
+        (resultado) ? document.write(`Boa tarde Sr(a) ${name}, seja bem-vindo!! As 19:00 será aberto o evento "Rebaixadas" com as melhores anãs da região =P`) : document.write(`Olá ${name}, lamento informar que, por ser menor de 18 anos, você não terá acesso ao nosso site de paqueras =C`);
+    </script>
+</body>
+</html>
